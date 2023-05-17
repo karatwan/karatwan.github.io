@@ -46,13 +46,14 @@
       margin-top: 4rem;
     }
     
+    
     .intro .inline {
       display: flex;
       flex-direction: row;
       position: relative;
     }
     
-    .intro .inline .contact {
+    .intro .inline .topRight {
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
@@ -61,11 +62,19 @@
       right: 4rem;
     }
     
-    .intro .inline .contact p {
+    .intro .inline .topRight p {
       font-size: 1rem;
       margin-left: 2rem;
     }
     
+    .intro .bottomRight{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+    }
 
     .sectionLinks {
       display: flex;
@@ -249,7 +258,6 @@
   </style>
   
   
-  
 
 </head>
 
@@ -261,13 +269,21 @@
    <div class="intro">
     <div class="inline">
         <h1>Hello!</h1> 
-        <div class="contact">
-          <p class="afterHeader" target="_blank"><a href="https://www.linkedin.com/in/karat-wannissorn/">LinkedIn</a></p>
+        <div class="topRight">
+          <p target="_blank"><a href="https://www.linkedin.com/in/karat-wannissorn/">LinkedIn</a></p>
           <p><a href="https://github.com/karatwan" target="_blank">GitHub</a></p>
         </div>
     </div>
 
     <p>I'm Karat</p>
+
+
+    <div class="bottomRight">
+        <img src="https://media4.giphy.com/media/dWTi2yiBnSq1K2MkTE/200w.gif?cid=6c09b952s4ue9lctejs3zjip5sysw1zrkui616ql9zqcw5ab&ep=v1_gifs_search&rid=200w.gif&ct=s" width=300px alt="greeting GIF"> <!---->
+             
+    </div>
+    
+        
   </div>
   
   <br> 
