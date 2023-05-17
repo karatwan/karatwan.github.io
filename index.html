@@ -4,6 +4,7 @@
 
 
  
+ 
   <meta charset="UTF-8"><meta name="viewport"content="width=device-width, initial-scale=1.0"><title>Your Name - Resume</title><style>body {
     font-family: Arial;
     margin: 0;
@@ -54,7 +55,7 @@
     align-items: flex-start;
     position: absolute;
     top: 0;
-    right: 4rem;
+    right: 5rem;
   }
 
   .intro .inline .topRight p {
@@ -85,12 +86,12 @@
 
   .brief h1,
   .brief p {
-    margin-right: 4rem;
+    margin-right: 5rem;
   }
 
   .brief h1 {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
     font-size: 3rem;
     color: #ffffff;
   }
@@ -98,7 +99,7 @@
   .brief p {
     font-size: 20px;
     color: rgba(250, 250, 250, 0.7);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 
   }
 
@@ -139,6 +140,13 @@
     margin-top: 4rem;
   }
   
+  .brief img {
+    position: absolute;
+    /*top: 50%;*/ /*center img*/
+    top: 75%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
 
   .recent {
     background-color: #000000;
@@ -146,11 +154,66 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    font-family: Arial;
+    list-style: none;
+  }
+  
+  .recent h1 {
+    margin-top: 4.5rem;
+    margin-left: 5.5rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  
+  .recent .section {
+    background-image: none;
+    background-position: center;
+    position: relative;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+  }
+ 
+  .recent .subsection {
+    display: flex;
+    list-style: none;
     font-family: Arial;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
+  .recent img {
+    border-radius: 30px;
+  }
+  
+  .recent .first img,
+  .recent .first video,
+  .recent .first iframe {
+    height: 400px;
+    margin-bottom: 1rem;
+    width: 81vw;
+    overflow: hidden;
+  }
+
+  .recent .second img, 
+  .recent .third img {
+    height: 300px;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    width: 40vw;
+  }
+  
+  .recent .third img {
+    margin-left: 2vw;
+  }
+  
 
   .sectionLinks {
     display: flex;
@@ -353,7 +416,10 @@
     opacity: 0;
   }
 
+
   </style>
+
+
 
 
 
@@ -368,8 +434,10 @@
 
 <body>
 
-  
-  
+ 
+ 
+ 
+ 
     <div class="intro">
     <div class="inline">
 
@@ -425,9 +493,13 @@
 
       <h1>Hoping to explore...</h1>
       <p>Full-stack Development</p>
+      <p>Product + UI Design</p>
       <p>Verification Engineering</p>
-      <p>Product Design</p>
+      <p>Circuit Design</p>
 
+      <img src="https://media4.giphy.com/media/dWTi2yiBnSq1K2MkTE/200w.gif?cid=6c09b952s4ue9lctejs3zjip5sysw1zrkui616ql9zqcw5ab&ep=v1_gifs_search&rid=200w.gif&ct=s" width=300px alt="greeting GIF"> <!--to change-->
+
+      <!--
       <div class="overlay">
         <div class="o1">
         
@@ -440,12 +512,10 @@
         </div>
       
       </div>
-  
-  
-  
-  
-  
-  
+    ` -->
+    
+    
+
   
   </div> <!--end brief-->
   
@@ -453,7 +523,42 @@
   
   <div class="recent">
   
-  
+    <h1>Recent</h1>
+    <div class="section">
+    
+      <div class="subsection">
+
+        <div class="first">
+
+          <video autoplay muted>
+           <source src="https://drive.google.com/file/d/1YZ3W5fHrr-buX14zMa5SndUi7vDvhYdU/view?usp=share_link" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <iframe src="https://www.youtube.com/watch?v=xtWyNpGsgC8" frameborder="0" allowfullscreen></iframe>
+
+          <!--<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> -->
+
+        </div>
+      </div>
+        
+      <div class="subsection">
+      
+
+        <div class=" second">
+<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> 
+        </div>
+        
+        <div class="third">
+<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> 
+        </div>
+      
+      </div>
+    
+    
+    
+    </div>
+    
   
   
   
@@ -494,6 +599,9 @@
 
   
   <script src="index.js"></script>
+  
+ 
+ 
 
 </body>
 </html>
