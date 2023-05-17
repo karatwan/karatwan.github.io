@@ -4,6 +4,7 @@
 
 
 
+ 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Resume</title>
@@ -37,7 +38,7 @@
       color: #ffffff; 
     }
     
-    .about {
+    .sectionLink {
       background-image: url("https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg?crop=1.00xw:0.798xh;0,0.202xh&resize=1200:*");
       background-position: center;
       position: relative;
@@ -49,17 +50,17 @@
       flex-direction: column;
     }
     
-    .about h1 {
+    .sectionLink h1 {
       font-size: 2rem;
       color: #ffffff; 
     }
     
-    .about p {
+    .sectionLink p {
       font-size: 1rem;
       color: #ffffff; 
     }
 
-    .about a {
+    .sectionLink a {
       display: flex;
       color: #fff;
       text-decoration: none;
@@ -67,8 +68,8 @@
       transition: background-color 0.3s ease;
     }
    
-    .about h1,
-    .about p {
+    .sectionLink h1,
+    .sectionLink p {
       color: #ffffff;
       z-index: 1;
     }
@@ -182,49 +183,54 @@
       opacity: 0;
     }
     
-    .about:hover h1 {
+    .sectionLink:hover h1 {
       opacity: 0;
     }
     
-    .about:hover .overlay,
-    .about:hover p {
+    .sectionLink:hover .overlay,
+    .sectionLink:hover p {
       opacity: 1;
     }
-    
-
+  
 
   </style>
-
+  
+  
+  
 
 </head>
 
 
 <body>
 
+  
+  
 
-   <div class="intro">
+  <div class="intro">
     <h1>Hello!</h1> <br>
     <p>I'm Karat</p>
   </div>
   
   <br> 
   
-  <div class="about" >
-  <h1><a href="aboutMe.html">About Me</a></h1>
-    <div class="overlay">
-      <p>description blalkdfjlks</p>
-    </div>
-    
+  <div class="sectionLink" >
+    <h1><a href="aboutMe.html">About Me</a></h1>
+      <div class="overlay">
+        <p>description blalkdfjlks</p>
+      </div>
   </div>
   
+  <div class="sectionLink" >
+    <h1><a href="projects.html">Projects</a></h1>
+      <div class="overlay">
+        <p>description blalkdfjlks</p>
+      </div>
+  </div>
   
   <nav>
     <br> <br> <br> <br>
     <ul class="tabs">
-      <li class="tab"><a href="resume.html">Resume</a></li>
-      <li class="tab"><a href="projects.html">Projects</a></li>
-      <li class="tab home"><a href="index.html"><img src="https://static.vecteezy.com/system/resources/previews/004/220/756/original/home-silhouette-button-free-vector.jpg" alt="Home" width="50px" ></a></li>
-      <li class="tab"><a href="aboutMe.html">About Me</a></li>
+      <li class="tab"><a href="resume.html">Resume</a></li>>
       <li class="tab"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
