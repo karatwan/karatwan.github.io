@@ -6,6 +6,8 @@
  
  
  
+
+
   <meta charset="UTF-8"><meta name="viewport"content="width=device-width, initial-scale=1.0"><title>Your Name - Resume</title><style>body {
     font-family: Arial;
     margin: 0;
@@ -199,10 +201,15 @@
   .recent .first img,
   .recent .first video,
   .recent .first iframe {
-    height: 420px;
     margin-bottom: 1rem;
     width: 81vw;
     overflow: hidden;
+  } 
+  
+  .recent .first img,
+  .recent .first video,
+  .recent .first iframe {
+    height: calc(81vw*0.5625); /*ratio of video*/
   }
 
   .recent .second img, 
@@ -427,6 +434,8 @@
 
 
 
+
+
     
 
 
@@ -532,11 +541,14 @@
         <div class="first">
 
 
+        <img src="/media/cg65.gif" alt="Capstone GIF"> 
           
-          <iframe src="https://drive.google.com/file/d/1YZ3W5fHrr-buX14zMa5SndUi7vDvhYdU/preview" allow="autoplay muted"></iframe>
-        
 
-<iframe src="https://www.youtube.com/watch?v=xtWyNpGsgC8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://drive.google.com/file/d/1YZ3W5fHrr-buX14zMa5SndUi7vDvhYdU/preview" allow="autoplay"></iframe>
+                  
+                  
+                  <iframe width="1268" height="713" src="https://www.youtube.com/embed/KFlVgSq77Jw?autoplay=1" title="Lofi city • lofi ambient music | chill beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 
 
@@ -602,7 +614,6 @@
 
   
   <script src="index.js"></script>
-  
  
  
 
