@@ -6,6 +6,7 @@
  
  
 
+ 
   <meta charset="UTF-8"><meta name="viewport"content="width=device-width, initial-scale=1.0"><title>Your Name - Resume</title><style>body {
     font-family: Arial;
     margin: 0;
@@ -17,7 +18,7 @@
 
   .intro {
     background-color: #000000;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -75,8 +76,8 @@
   }
 
   .dividerIntro {
-    background: linear-gradient(to bottom, #000000, #333333, #666666, #999999, #bbbbbb, #dddddd, #ffffff);
-    height: 400px;
+    background: #ffffff;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -84,16 +85,13 @@
     font-family: Arial;
   }
   
-  .dividerIntro h1 {
-    margin-right: 5rem;
+  .dividerIntro img {
+    position: absolute;
+    /*top: 50%;*/ /*center img*/
+    margin-top: 0;
+    width: 100vw;
   }
-
-  .dividerIntro h1 {
-    margin-top: 12rem;
-    margin-bottom: 2.5rem;
-    font-size: 3rem;
-    color: #000000;
-  }
+  
 
   .brief {
     background: #ffffff;/*#0e0e0e;*/
@@ -457,6 +455,8 @@
 
 
 
+
+
     
 
 
@@ -468,7 +468,7 @@
 <body>
 
  
-  <div class="intro">
+    <div class="intro">
     <div class="inline">
 
         <div id="textContainer">
@@ -510,14 +510,15 @@
     <p class="small"> </p>
 
 
-    <div class="bottomRight">
+    <div class="bottomRight"> 
+
         <!--<img src="https://media4.giphy.com/media/dWTi2yiBnSq1K2MkTE/200w.gif?cid=6c09b952s4ue9lctejs3zjip5sysw1zrkui616ql9zqcw5ab&ep=v1_gifs_search&rid=200w.gif&ct=s" width=300px alt="greeting GIF"> -->
              
     </div>
     
   </div> <!--end intro-->
   
-  <div class="dividerIntro"> </div>
+  <div class="dividerIntro">       <img src="https://static.vecteezy.com/system/resources/previews/019/859/713/original/black-melt-drips-liquid-paint-drops-seamless-dripping-paint-liquid-drips-black-ink-runs-transparent-background-illustration-png.png" alt="paint"></div>
   
   <div class="brief">
   
@@ -647,6 +648,7 @@
 
   
   <script src="index.js"></script>
+ 
 
 </body>
 </html>
