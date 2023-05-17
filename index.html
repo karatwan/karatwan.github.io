@@ -25,7 +25,7 @@
     
     .intro {
       background-color: #000000;
-      height: 500px; 
+      height: 700px; 
       display: flex;
       flex-direction: column;
       position: relative;
@@ -49,17 +49,23 @@
     .intro .inline {
       display: flex;
       flex-direction: row;
+      position: relative;
     }
     
-    .intro .inline p {
-      font-size: 1rem;
-      margin-left: 1rem;
+    .intro .inline .contact {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      position: absolute;
+      top: 0;
+      right: 4rem;
     }
     
-    .intro .inline p.afterHeader {
+    .intro .inline .contact p {
       font-size: 1rem;
-      margin-left: 32rem;
-    }    
+      margin-left: 2rem;
+    }
+    
 
     .sectionLinks {
       display: flex;
@@ -252,11 +258,13 @@
 
   
   
-  <div class="intro">
+   <div class="intro">
     <div class="inline">
         <h1>Hello!</h1> 
-        <p class="afterHeader"><a href="https://www.linkedin.com/in/karat-wannissorn/">LinkedIn</a><p>
-        <p><a href="https://github.com/karatwan">GitHub</a><p>
+        <div class="contact">
+          <p class="afterHeader" target="_blank"><a href="https://www.linkedin.com/in/karat-wannissorn/">LinkedIn</a></p>
+          <p><a href="https://github.com/karatwan" target="_blank">GitHub</a></p>
+        </div>
     </div>
 
     <p>I'm Karat</p>
@@ -286,7 +294,7 @@
     <br> <br> <br> <br>
     <ul class="tabs">
       <li class="tab"><a href="resume.html">Resume</a></li>
-      <li class="tab"><a href="contact.html">Contact</a></li>
+      <li class="tab"><a href="others.html">Others</a></li>
     </ul>
   </nav>
 
