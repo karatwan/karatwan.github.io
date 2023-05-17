@@ -17,7 +17,7 @@
 
   .intro {
     background-color: #000000;
-    height: 700px;
+    height: 490px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -74,9 +74,29 @@
     right: 2rem;
   }
 
+  .dividerIntro {
+    background: linear-gradient(to bottom, #000000, #333333, #666666, #999999, #bbbbbb, #dddddd, #ffffff);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .dividerIntro h1 {
+    margin-right: 5rem;
+  }
+
+  .dividerIntro h1 {
+    margin-top: 12rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: #000000;
+  }
 
   .brief {
-    background-color: #ffffff; /*#0e0e0e;*/
+    background: #ffffff;/*#0e0e0e;*/
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -91,7 +111,7 @@
   }
 
   .brief h1 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 2.5rem;
     font-size: 3rem;
     color: #000000;
@@ -435,6 +455,8 @@
 
 
 
+
+
     
 
 
@@ -446,7 +468,7 @@
 <body>
 
  
-   <div class="intro">
+    <div class="intro">
     <div class="inline">
 
         <div id="textContainer">
@@ -495,6 +517,8 @@
     
   </div> <!--end intro-->
   
+  <div class="dividerIntro"> <h1>Hoping to explore...</h1> </div>
+  <div class="dividerIntro2"> </div>
   
   <div class="brief">
   
@@ -624,7 +648,6 @@
 
   
   <script src="index.js"></script>
- 
  
 
 </body>
