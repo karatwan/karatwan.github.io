@@ -1,3 +1,32 @@
+// Get the text elements
+const texts = Array.from(document.getElementsByClassName('text'));
+
+// Function to hide all texts
+function hideAllTexts() {
+  texts.forEach((text) => {
+    text.style.display = 'none';
+  });
+}
+
+// Function to show a specific text for a given duration
+function showText(index, duration) {
+  hideAllTexts();
+  texts[index].style.display = 'block';
+  
+  setTimeout(() => {
+    texts[index].style.display = 'none';
+    const nextIndex = (index + 1) % texts.length;
+    const nextDuration = parseInt(texts[nextIndex].getAttribute('data-duration'), 10);
+    showText(nextIndex, nextDuration);
+  }, duration);
+}
+
+// Initial setup - show the first text
+const firstDuration = parseInt(texts[0].getAttribute('data-duration'), 10);
+showText(0, firstDuration);
+
+/*
+
 document.addEventListener("DOMContentLoaded", function() {
   var introElement = document.querySelector(".intro");
   
@@ -23,4 +52,4 @@ function getColor(scrollPercent) {
   
   return "rgb(" + interpolatedColor.join(",") + ")";
 }
-
+*/
