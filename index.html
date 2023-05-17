@@ -5,6 +5,9 @@
 
 
  
+
+
+    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Resume</title>
@@ -38,19 +41,36 @@
       color: #ffffff; 
     }
     
+    .sectionLinks {
+      display: flex;
+      list-style: none;
+    }
+    
     .sectionLink {
       background-image: url("https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg?crop=1.00xw:0.798xh;0,0.202xh&resize=1200:*");
       background-position: center;
       position: relative;
-      height: 250px; 
-      display: flex;
+      height: 400px; 
+      width: 50%;
       align-items: center;
       justify-content: center;
       text-align: center;
       flex-direction: column;
     }
     
+    .sectionLink.about {
+      background-image: url("https://wallpapers.com/images/featured/l4bjrhl8d4u3ddd7.jpg");
+    }
+    
+    .sectionLink.projects {
+      background-image: url("https://dvyvvujm9h0uq.cloudfront.net/com/articles/1542633307-650067-john-gibbons-311400-unsplashjpg.jpg");
+    }
+    
     .sectionLink h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 2rem;
       color: #ffffff; 
     }
@@ -191,7 +211,8 @@
     .sectionLink:hover p {
       opacity: 1;
     }
-  
+    
+
 
   </style>
   
@@ -206,25 +227,29 @@
   
   
 
-  <div class="intro">
+   <div class="intro">
     <h1>Hello!</h1> <br>
     <p>I'm Karat</p>
   </div>
   
   <br> 
   
-  <div class="sectionLink" >
-    <h1><a href="aboutMe.html">About Me</a></h1>
-      <div class="overlay">
-        <p>description blalkdfjlks</p>
-      </div>
-  </div>
+  <div class="sectionLinks">
+
+    <div class="sectionLink about" >
+      <h1><a href="aboutMe.html">About Me</a></h1>
+        <div class="overlay">
+          <p>description blalkdfjlks</p>
+        </div>
+    </div>
+
+    <div class="sectionLink projects" >
+      <h1><a href="projects.html">Projects</a></h1>
+        <div class="overlay">
+          <p>description blalkdfjlks</p>
+        </div>
+    </div>
   
-  <div class="sectionLink" >
-    <h1><a href="projects.html">Projects</a></h1>
-      <div class="overlay">
-        <p>description blalkdfjlks</p>
-      </div>
   </div>
   
   <nav>
@@ -238,7 +263,6 @@
 
   
   <script src="index.js"></script>
-
 
 
 </body>
