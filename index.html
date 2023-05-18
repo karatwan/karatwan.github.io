@@ -6,7 +6,6 @@
  
  
 
- 
 
   <meta charset="UTF-8">
   <meta name="viewport"content="width=device-width, initial-scale=1.0">
@@ -235,21 +234,25 @@
   .recent .first iframe {
     height: calc(50vw*0.5625); /*ratio of video*/
   }
+  
+
 
   .recent .second img, 
   .recent .third img {
     margin-bottom: 1rem;
     align-self: flex-start;
     width: 24vw;
+    border-radius: 30px;
+    background-color: #ffffff;
   }
   
-  .recent .second img {
-    height: 200px;
+  .recent .second img{
+    height: 400px;
   }
   
   .recent .third img {
     margin-left: 2vw;
-    height: 300px;
+    height: 600px;
   }
   
 
@@ -463,6 +466,7 @@
 
 
 
+
     
 
 
@@ -474,186 +478,461 @@
 <body>
 
  
-    <div class="intro">
-    <div class="inline">
-
-        <div id="textContainer">
-          <h1 class="text" data-duration="500"></h1>
-          <h1 class="text" data-duration="500">_</h1>
-          <h1 class="text" data-duration="500"></h1>
-          <h1 class="text" data-duration="500">_</h1>
-          <h1 class="text" data-duration="300">H</h1>
-          <h1 class="text" data-duration="300">He</h1>
-          <h1 class="text" data-duration="300">Hel</h1>
-          <h1 class="text" data-duration="300">Hel</h1>
-          <h1 class="text" data-duration="400">Helk</h1>
-          <h1 class="text" data-duration="300">Helk_</h1>
-          <h1 class="text" data-duration="300">Helk</h1>
-          <h1 class="text" data-duration="400">Hel</h1>
-          <h1 class="text" data-duration="500">Hel_</h1>
-          <h1 class="text" data-duration="300">Hel</h1>
-          <h1 class="text" data-duration="300">Hell</h1>
-          <h1 class="text" data-duration="500">Hello</h1>
-          <h1 class="text" data-duration="500">Hello_</h1>          
-          <h1 class="text" data-duration="500">Hello</h1>
-          <h1 class="text" data-duration="500">Hello_</h1>
-          <h1 class="text" data-duration="180">Hell</h1>
-          <h1 class="text" data-duration="180">Hel</h1>
-          <h1 class="text" data-duration="180">He</h1>
-          <h1 class="text" data-duration="180">H</h1>
-        </div>
-        
-        
-        <div class="topRight">
-          <p><a href="https://www.linkedin.com/in/karat-wannissorn/" target="_blank">LinkedIn</a></p>
-          <p><a href="https://github.com/karatwan" target="_blank">GitHub</a></p>
-        </div>
-    </div>
-
-    <p>I'm Karat</p>
-    <p class="small">EE + CS student</p>
-    <p class="small"> </p>
-    <p class="small"> </p>
-
-
-    <div class="bottomRight"> 
-
-        <!--<img src="https://media4.giphy.com/media/dWTi2yiBnSq1K2MkTE/200w.gif?cid=6c09b952s4ue9lctejs3zjip5sysw1zrkui616ql9zqcw5ab&ep=v1_gifs_search&rid=200w.gif&ct=s" width=300px alt="greeting GIF"> -->
-             
-    </div>
     
-  </div> <!--end intro-->
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <title>Karat Wannissorn</title>
   
-  <div class="dividerIntro">       <img src="https://static.vecteezy.com/system/resources/previews/019/859/713/original/black-melt-drips-liquid-paint-drops-seamless-dripping-paint-liquid-drips-black-ink-runs-transparent-background-illustration-png.png" alt="paint"></div>
+  <style>
   
-  <div class="brief">
+  body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro {
+    background-color: #000000;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: Arial;
+  }
+
+  .intro h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    margin-left: 7rem;
+    margin-top: 9rem;
+  }
+
+  .intro p {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 7rem;
+    margin-top: 5rem;
+  }
+
+  .intro p.small {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+
+  .inline {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .inline .topRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+  }
+
+  .intro .inline .topRight p {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .intro .bottomRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+  }
+
+  .dividerIntro {
+    background: #ffffff;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    font-family: Arial;
+  }
   
-
-      <h1>Hoping to explore...</h1>
-      <p>Full-stack Development</p>
-      <p>Product + UI Design</p>
-      <p>Verification Engineering</p>
-      <p>Circuit Design</p>
-
-      <img src="https://media4.giphy.com/media/dWTi2yiBnSq1K2MkTE/200w.gif?cid=6c09b952s4ue9lctejs3zjip5sysw1zrkui616ql9zqcw5ab&ep=v1_gifs_search&rid=200w.gif&ct=s" width=200px alt="greeting GIF"> <!--to change-->
-
-      <!--
-      <div class="overlay">
-        <div class="o1">
-        
-        
-        </div>
-        
-        <div class="o2">
-        
-        
-        </div>
-      
-      </div>
-    ` -->
-    
-    
-
-  
-  </div> <!--end brief-->
-  
-  
-  
-  <div class="recent">
-  
-    <h1>Recent</h1>
-    <div class="section">
-    
-      <div class="subsection">
-
-        <div class="first">
-
-
-        <img src="/media/cg65.gif" alt="Capstone GIF"> 
-          
-        </div>
-        
-     </div>
-                  
-                  
-     <div class="subsection">
-
-        <div class="first">
-
-
-          
-
-          <iframe src="https://drive.google.com/file/d/1YZ3W5fHrr-buX14zMa5SndUi7vDvhYdU/preview" allow="autoplay"></iframe>
-                  
-        <!--
-                  
-                  <iframe width="1268" height="713" src="https://www.youtube.com/embed/KFlVgSq77Jw?autoplay=1" title="Lofi city • lofi ambient music | chill beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
-
-
-
-          <!--<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> -->
-
-        </div>
-      </div>
-        
-      <div class="subsection">
-      
-
-        <div class=" second">
-<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> 
-        </div>
-        
-        <div class="third">
-<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="greeting GIF"> 
-        </div>
-      
-      </div>
-    
-    
-    
-    </div>
-    
-  
-    <h1> UNDER CONSTRUCTION </h1>
-  
-  
-  
-  </div> <!--end recent-->
-  
-  
+  .dividerIntro img {
+    position: absolute;
+    /*top: 50%;*/ /*center img*/
+    margin-top: 0;
+    max-height: 100vw;
+    width: 100vw;
+  }
   
 
-  
-  <div class="sectionLinks">
+  .brief {
+    background: #ffffff;/*#0e0e0e;*/
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    font-family: Arial;
+  }
 
-    <div class="sectionLink about" >
-      <h1><a href="aboutMe.html">About Me</a></h1>
-        <div class="overlay">
-          <p>description blalkdfjlks</p>
-        </div>
-    </div>
+  .brief h1,
+  .brief p {
+    margin-right: 5rem;
+  }
 
-    <div class="sectionLink projects" >
-      <h1><a href="projects.html">Projects</a></h1>
-        <div class="overlay">
-          <p>description blalkdfjlks</p>
-        </div>
-    </div>
+  .brief h1 {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: #000000;
+  }
+
+  .brief p {
+    font-size: 20px;
+    color: rgba(0,0,0, 0.7);
+    margin-top: 0.5rem;
+
+  }
+
+  .brief:hover .o1, 
+  .brief:hover .o2 {
+    background-color: rgba(250, 250, 250, 0.8);
+    opacity: 1;
+  }
+
   
-  </div>
+  .brief .overlay {
+    background-color: #0e0e0e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
   
-  <nav>
-    <br> <br> <br> <br>
-    <ul class="tabs">
-      <li class="tab"><a href="resume.html">Resume</a></li>
-      <li class="tab"><a href="others.html">Others</a></li>
-    </ul>
-  </nav>
+  .brief .overlay .o1 {
+    width: 30%;
+    height: 10%;
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .brief .overlay .o2 {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    margin-top: 4rem;
+  }
+  
+  .brief img {
+    position: absolute;
+    /*top: 50%;*/ /*center img*/
+    top: 85%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+  }
+
+  .recent {
+    background-color: #000000;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: Arial;
+    list-style: none;
+  }
+  
+  .recent h1 {
+    margin-top: 4.5rem;
+    margin-left: 5.5rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  
+  .recent .section {
+    background-image: none;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+  }
+ 
+  .recent .subsection {
+    display: flex;
+    list-style: none;
+    font-family: Arial;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .recent img, 
+  .recent video, 
+  .recent iframe {
+    border-radius: 30px;
+  }
+  
+  .recent .first img,
+  .recent .first video,
+  .recent .first iframe {
+    margin-bottom: 1rem;
+    width: 50vw;
+    overflow: hidden;
+  } 
+  
+  .recent .first img,
+  .recent .first video,
+  .recent .first iframe {
+    height: calc(50vw*0.5625); /*ratio of video*/
+  }
+  
 
 
+  .recent .second img, 
+  .recent .third img {
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    width: 24vw;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
   
-  <script src="index.js"></script>
+  .recent .second img{
+    height: 400px;
+  }
+  
+  .recent .third img {
+    margin-left: 2vw;
+    height: 600px;
+  }
+  
+
+  .sectionLinks {
+    display: flex;
+    list-style: none;
+    font-family: Arial;
+  }
+
+  .sectionLink {
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg?crop=1.00xw:0.798xh;0,0.202xh&resize=1200:*");
+    background-position: center;
+    position: relative;
+    height: 400px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .sectionLink.about {
+    background-image: url("https://wallpapers.com/images/featured/l4bjrhl8d4u3ddd7.jpg");
+  }
+
+  .sectionLink.projects {
+    background-image: url("https://dvyvvujm9h0uq.cloudfront.net/com/articles/1542633307-650067-john-gibbons-311400-unsplashjpg.jpg");
+  }
+
+  .sectionLink h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .sectionLink p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .sectionLink a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sectionLink h1,
+  .sectionLink p {
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  a {
+    color: #ffffff
+  }
+
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .section-subTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
+  .section-subContent {
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
+  .tabs {
+    font-family: Arial;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .tab a {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #444444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .tab a:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+  }
+
+  .tab.active a {
+    background-color: #aaaaaa;
+    font-weight: bold;
+  }
+
+  .tab.home a {
+    background-color: #000000;
+    padding: 0px;
+  }
+
+  /* Darken image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .overlay p {
+    opacity: 0;
+  }
+
+  .sectionLink:hover h1 {
+    opacity: 0;
+  }
+
+  .sectionLink:hover .overlay,
+  .sectionLink:hover p {
+    opacity: 1;
+  }
+
+
+  #textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .text {
+    display: none;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+  }
+
+  .text.visible {
+    display: block;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+
+  </style>
+
+
  
 
 </body>
