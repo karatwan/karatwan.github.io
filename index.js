@@ -1,10 +1,16 @@
 // Get the text elements
-const texts = Array.from(document.getElementsByClassName('text'));
+
+const texts = Array.from(document.getElementsByClassName('hellotext'));
+console.log(texts);
+
+
+const testIdArray= document.getElementById('aaaa1');
+console.log(testIdArray);
 
 // Function to hide all texts
 function hideAllTexts() {
-  texts.forEach((text) => {
-    text.style.display = 'none';
+  texts.forEach((target_text) => {
+    target_text.style.display = 'none';
   });
 }
 
@@ -21,9 +27,18 @@ function showText(index, duration) {
   }, duration);
 }
 
+
 // Initial setup - show the first text
 const firstDuration = parseInt(texts[0].getAttribute('data-duration'), 10);
 showText(0, firstDuration);
+
+
+/*
+document.addEventListener('DOMContentLoaded', function() {
+  var addButton = document.getElementById('testText');
+  addButton.click(); // This line triggers the click event on the button
+});
+*/
 
 /*
 
